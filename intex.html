@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link href="styles.css" rel="stylesheet" />
+    <title>9.5 Form submit</title>
+  </head>
+  <body>
+    <h1>9.5 Form submit</h1>
+    <main>
+      <form name="addressForm" novalidate>
+        <p>Please fill in all the fields</p>
+        <div class="form-field">
+          <label for="name">What is your name?</label>
+          <input
+            autocomplete="name"
+            class="form-field-input"
+            id="name"
+            name="name"
+          />
+          <p class="error-text" id="nameError"></p>
+        </div>
+        <div class="form-field">
+          <label for="streetAddress">How old are you?</label>
+          <input
+            autocomplete="age"
+            class="form-field-input"
+            id="age"
+            name="age"
+            type="number"
+          />
+          <p class="error-text" id="ageError"></p>
+        </div>
+        <fieldset id="frameworkBox">
+          <legend>Choose your framework?</legend>
+          <div class="radio-box">
+            <label for="react">
+              React:
+            </label>
+            <input id="react" name="framework" type="radio" value="react" />
+          </div>
+          <div class="radio-box">
+            <label for="angular">Angular: </label>
+            <input name="framework" id="angular" type="radio" value="angular" />
+          </div>
+          <p class="error-text" id="frameworkError"></p>
+        </fieldset>
+        <div></div>
+        <div class="form-field">
+          <label for="conversion">How did you find us?</label>
+          <select
+            autocomplete="conversion"
+            class="form-field-input"
+            id="conversion"
+            name="conversion"
+            required
+          >
+            <option></option>
+            <option value="web-search">Web search</option>
+            <option value="social-media">Social media</option>
+            <option value="reference">Reference</option>
+            <option value="other">Other</option>
+          </select>
+          <p class="error-text" id="conversionError"></p>
+        </div>
+        <div>
+          <label
+            >Accept Terms and condition <input name="terms" type="checkbox"
+          /></label>
+          <p class="error-text" id="termsError"></p>
+        </div>
+        <button>Submit information</button>
+      </form>
+    </main>
+    <script src="index.mjs/script>
+  </body>
+</html>

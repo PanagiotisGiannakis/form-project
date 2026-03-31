@@ -1,0 +1,41 @@
+* {
+  box-sizing: border-box;
+}
+
+form {
+  width: 90vw;
+  max-width: 20em;
+}
+
+.form-field {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-field-input {
+  border: 1px solid;
+  padding: 0.3em;
+  width: 200px;
+}
+
+fieldset {
+  margin-bottom: 16px;
+  width: 200px;
+}
+
+.radio-box {
+  display: flex;
+  justify-content: space-between;
+  width: 80px;
+}
+
+.error-input {
+  border: 2px solid tomato;
+}
+
+.error-text {
+  color: tomato;
+  font-size: 14px;
+  height: 16px;
+  margin: 2px 0px 4px;
+}
